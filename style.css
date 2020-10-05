@@ -1,18 +1,20 @@
-* body {
+body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
+background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg")
   } 
 
-  #textArea{
-    background: transparent; 
+#textArea {
+    font-size: 20px;
+    background: rgb(83, 106, 235); 
     resize: none;
     color: #000000; 
     padding: 10px;
     text-align: center;
   }
   
-  .jumbotron {
+.jumbotron {
     text-align: center;
     background-color: transparent;
     color: black;
@@ -20,57 +22,55 @@
     border-bottom: 10px solid black;
   }
   
-  /* .description{
+.content {
     white-space: pre-wrap;
     border: #000000;
     border-width: 2px;
-  } */
+  }
   
-  .time-block{
+.time-block{
     text-align: center;
     border-radius: 15px;
   }
   
-  .row {
+.row {
     /* white-space: pre-wrap; */
     height: 80px;
     border: 1px solid black;;
   }
   
-  .hour {
+.hour {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #000000;
     text-align: center;
+    font-size: 14px;
   }
   
-  .past {
-    background-color: #1c0766;
+.past {
+    background-color: #7a92ff;
     color: white;
   }
   
-  .present {
-    background-color: #99f332;
-    color: white;
+.present {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
   }
   
-  .future {
-    background-color: #455ff3;
-    color: white;
+.future {
+    background-color: #1d3ef7;
+    color: rgb(0, 0, 0);
   }
   
-  .saveBtn {
+.saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
+    background-color: #10009c;
+    color: whitesmoke;
   }
   
-  .saveBtn i:hover {
+.saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
-  }
-  body {
-    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg")
   }
