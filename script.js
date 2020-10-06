@@ -31,7 +31,7 @@ $(document).ready(function () {
     $("#16 .content").val(localStorage.getItem("16"));
     $("#17 .content").val(localStorage.getItem("17"));
 
-    function timetracker() {
+    function timeCondition() {
         //get current number of hours.
         var currentTime = moment().hour();
         // loop over time blocks
@@ -41,22 +41,13 @@ $(document).ready(function () {
 
             //check if we've moved past this time
             if (parsedId < currentTime) {
-                $(".content").css('background-color', 'blue');
-                // $(this).addClass("past");
-                // $(this).removeClass("future");
-                // $(this).removeClass("present");
+                $(".content").css('background-color', '#d3d3d3');         
             } else if (parsedId === currentTime) {
-                $(".content").css('background-color', 'red');
-                // $(this).addClass("present");
-                // $(this).removeClass("past");               
-                // $(this).removeClass("future");
+                $(".content").css('background-color', '#ff6961');
             } else {
-                $(".content").css('background-color', 'yellow');
-                // $(this).addClass("future");
-                // $(this).removeClass("present");
-                // $(this).removeClass("past");                
+                $(".content").css('background-color', '#77dd77');            
             }
         })
     }
-    timetracker();
+    timeCondition ();
 });
