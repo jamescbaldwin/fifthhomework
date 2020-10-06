@@ -41,11 +41,15 @@ $(document).ready(function () {
 
             //check if we've moved past this time
             if (parsedId < currentTime) {
-                $(".content").css('background-color', '#d3d3d3');         
+                $(this).css('background-color', '#d3d3d3'); 
+                $(".content").css('opacity', '40%');
+                // $(".content").css('opacity', '20%');       
             } else if (parsedId === currentTime) {
-                $(".content").css('background-color', '#ff6961');
+                $(this).css('background-color', '#ff6961');
+                // $(".content").css('opacity', '60%'); 
             } else {
-                $(".content").css('background-color', '#77dd77');            
+                $(this).css('background-color', '#77dd77');            
+                // $(".content").css('opacity', '100%'); 
             }
         })
     }
